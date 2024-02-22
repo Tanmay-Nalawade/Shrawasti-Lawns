@@ -1,0 +1,27 @@
+:root {
+  /* SPACING */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gradient-canvas {
+  width: 100vw;
+  height: 100vh;
+  --gradient-color-1: #fefdfc;
+  --gradient-color-2: #d9c5b6;
+  --gradient-color-3: #b99b7d;
+  --gradient-color-4: #856351;
+}
