@@ -1,4 +1,8 @@
 :root {
+  /* --body-font: */
+  --text-dark: #000;
+  --bg-white: #fefdfc;
+
   /* SPACING */
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -7,14 +11,28 @@
 }
 
 body {
+  /* font-family: var(--body-font); */
+  color: var(--text-dark);
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  background-color: transparent;
+  /* padding: 0 0 0 0; */
+  background-color: var(--bg-white);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.main_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main_section img {
+  position: absolute;
 }
 
 #gradient-canvas {
@@ -24,4 +42,16 @@ body {
   --gradient-color-2: #d9c5b6;
   --gradient-color-3: #b99b7d;
   --gradient-color-4: #856351;
+
+  /* With one white one gold and two leaves color */
+  /* --gradient-color-1: #fefdfc;
+  --gradient-color-2: #d9c5b6;
+  --gradient-color-3: #88bca7;
+  --gradient-color-4: #61a48a; */
+
+  /* With one white two golden and one light green color */
+  /* --gradient-color-1: #fefdfc;
+  --gradient-color-2: #d9c5b6;
+  --gradient-color-3: #b99b7d;
+  --gradient-color-4: #88bca7; */
 }
