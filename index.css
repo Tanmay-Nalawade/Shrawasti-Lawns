@@ -1,7 +1,7 @@
 :root {
   /* --body-font: */
   --text-dark: #000;
-  --bg-white: #fefdfc;
+  --white: #fefdfc;
 
   /* SPACING */
   --spacing-sm: 8px;
@@ -17,12 +17,46 @@ body {
   margin: 0;
   box-sizing: border-box;
   /* padding: 0 0 0 0; */
-  background-color: var(--bg-white);
-  /* display: flex;
+  background-color: var(--white);
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: #fefdfc;
+}
+.menu {
+  width: 100%;
+  max-width: 1000px;
+}
+.menu li {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.menu a {
+  color: #aa865b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* GRADIENT */
 
 .main_section {
   display: flex;
