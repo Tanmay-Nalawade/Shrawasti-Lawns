@@ -2,12 +2,33 @@
   /* --body-font: */
   --text-dark: #000;
   --white: #fefdfc;
+  --logo-colour: #aa865b;
 
   /* SPACING */
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
+
+  --font-cursive: "Carattere", sans-serif;
+  --h4-font: "Anek Telugu", sans-serif;
+}
+
+h1 {
+  font-size: 94px;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  font-family: var(--font-cursive);
+}
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.25px;
 }
 
 body {
@@ -31,9 +52,8 @@ body {
   justify-content: center;
   align-items: center;
   top: 0;
-  width: 100%;
   padding: var(--spacing-md);
-  background-color: #fefdfc;
+  /* background-color: var(--white); */
 }
 .menu {
   width: 100%;
@@ -47,7 +67,7 @@ body {
   list-style: none;
 }
 .menu a {
-  color: #aa865b;
+  color: var(--white);
   font-weight: bold;
   text-decoration: none;
 }
@@ -55,19 +75,12 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+.main_section img {
+  height: 900px;
+  max-height: 1000px;
+}
 
 /* GRADIENT */
-
-.main_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main_section img {
-  position: absolute;
-}
 
 #gradient-canvas {
   width: 100vw;
@@ -76,7 +89,10 @@ body {
   --gradient-color-2: #d9c5b6;
   --gradient-color-3: #b99b7d;
   --gradient-color-4: #856351;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   /* With one white one gold and two leaves color */
   /* --gradient-color-1: #fefdfc;
   --gradient-color-2: #d9c5b6;
@@ -88,4 +104,48 @@ body {
   --gradient-color-2: #d9c5b6;
   --gradient-color-3: #b99b7d;
   --gradient-color-4: #88bca7; */
+}
+
+.description {
+  color: #b99b7d;
+}
+.description .main-description {
+  font-size: 5rem;
+  color: var(--logo-colour);
+  font-weight: normal;
+  padding: 100px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-column {
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.two-column > .col-right {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
