@@ -3,6 +3,7 @@
   --text-dark: #000;
   --white: #fefdfc;
   --logo-colour: #aa865b;
+  --light-logo-color: #b99b7d;
 
   /* SPACING */
   --spacing-sm: 8px;
@@ -11,30 +12,33 @@
   --spacing-xl: 64px;
 
   --font-cursive: "Carattere", sans-serif;
-  --h4-font: "Anek Telugu", sans-serif;
+  --h2-font: "Tangerine", sans-serif;
 }
 
 h1 {
-  font-size: 94px;
-  font-weight: 600;
+  font-size: 5rem;
+  font-weight: normal;
+  color: var(--logo-colour);
   margin: 0;
   width: 100%;
   letter-spacing: 1px;
   font-family: var(--font-cursive);
 }
 h2 {
-  font-family: var(--heading-font);
+  font-family: var(--h2-font);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 40px;
   margin: 0;
   width: 100%;
   letter-spacing: 0.25px;
+  word-spacing: 3px;
 }
 
 body {
   /* font-family: var(--body-font); */
   color: var(--text-dark);
   width: 100%;
+  height: 100%;
   margin: 0;
   box-sizing: border-box;
   /* padding: 0 0 0 0; */
@@ -43,6 +47,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.section-container {
+  width: 100%;
+  max-width: 1144px;
 }
 
 /* NAVBAR */
@@ -83,8 +91,8 @@ body {
 /* GRADIENT */
 
 #gradient-canvas {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   --gradient-color-1: #fefdfc;
   --gradient-color-2: #d9c5b6;
   --gradient-color-3: #b99b7d;
@@ -92,6 +100,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: -1;
   /* With one white one gold and two leaves color */
   /* --gradient-color-1: #fefdfc;
@@ -107,16 +116,14 @@ body {
 }
 
 .description {
-  color: #b99b7d;
-}
-.description .main-description {
-  font-size: 5rem;
-  color: var(--logo-colour);
-  font-weight: normal;
-  padding: 100px 25px;
+  color: var(--light-logo-color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.description .main-description {
+  padding: 100px 25px;
 }
 
 .two-column {
@@ -125,15 +132,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .two-column > .col-left {
   width: 50%;
   box-sizing: border-box;
-  padding: 0 var(--spacing-md) 0 0;
+  padding: 0 var(--spacing-lg) 0 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -143,7 +150,7 @@ body {
 .two-column > .col-right {
   width: 50%;
   box-sizing: border-box;
-  padding: 0 0 0 var(--spacing-md);
+  padding: 0 5px 0 var(--spacing-lg);
   display: flex;
   flex-direction: column;
   justify-content: center;
