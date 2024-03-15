@@ -91,33 +91,6 @@ body {
   max-height: 1000px;
 }
 
-/* GRADIENT */
-
-#gradient-canvas {
-  width: 100%;
-  height: 100%;
-  --gradient-color-1: #fefdfc;
-  --gradient-color-2: #d9c5b6;
-  --gradient-color-3: #b99b7d;
-  --gradient-color-4: #856351;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  /* With one white one gold and two leaves color */
-  /* --gradient-color-1: #fefdfc;
-  --gradient-color-2: #d9c5b6;
-  --gradient-color-3: #88bca7;
-  --gradient-color-4: #61a48a; */
-
-  /* With one white two golden and one light green color */
-  /* --gradient-color-1: #fefdfc;
-  --gradient-color-2: #d9c5b6;
-  --gradient-color-3: #b99b7d;
-  --gradient-color-4: #88bca7; */
-}
-
 .description {
   color: var(--light-logo-color);
   display: flex;
