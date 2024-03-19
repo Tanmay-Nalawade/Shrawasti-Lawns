@@ -31,26 +31,26 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0;
-  /* z-index: 0; */
+  z-index: 0;
   animation: imageAnimation 30s linear infinite 0s;
 }
 .slideshow li:nth-child(1) span {
   background-image: url("./Assets/shravasti/ABP_9322.JPG");
 }
 .slideshow li:nth-child(2) span {
-  background-image: url("./Assets/shravasti/ABP_9320.JPG");
+  background-image: url("./Assets/images/Baby\ Shower.jpg");
   animation-delay: 6s;
 }
 .slideshow li:nth-child(3) span {
-  background-image: url("./Assets/shravasti/ABP_9344.JPG");
+  background-image: url("./Assets/images/namingCeremony.JPG");
   animation-delay: 12s;
 }
 .slideshow li:nth-child(4) span {
-  background-image: url("./Assets/shravasti/ABP_9340.JPG");
+  background-image: url("./Assets/images/haldi.jpg");
   animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-  background-image: url("./Assets/shravasti/ABP_9349.JPG");
+  background-image: url("./Assets/images/receptionParties.jpg");
   animation-delay: 24s;
 }
 @keyframes imageAnimation {

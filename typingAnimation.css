@@ -5,9 +5,13 @@
   bottom: 0;
   z-index: 3;
   color: #fefdfc;
-  font-weight: bold;
+  font-weight: normal;
   font-size: large;
 }
 .main-description h1 {
   color: #fefdfc;
+}
+#element {
+  text-decoration: underline;
+  font-weight: bold;
 }
