@@ -1,17 +1,13 @@
 .main-description {
-  font-size: var(--h2-font);
-  padding: 30px 0;
-  position: absolute;
-  bottom: 0;
-  z-index: 3;
-  color: #fefdfc;
-  font-weight: normal;
-  font-size: large;
+  font-family: var(--h2-font);
+  padding: 90px 0;
+  color: var(--logo-colour);
 }
 .main-description h1 {
-  color: #fefdfc;
+  color: var(--logo-colour);
 }
-#element {
-  text-decoration: underline;
-  font-weight: bold;
+.main-description b {
+  font-size: 100px;
+  letter-spacing: 3px;
+  word-spacing: 15px;
 }
