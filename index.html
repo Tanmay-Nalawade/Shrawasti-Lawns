@@ -15,12 +15,18 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link rel="shortcut icon" href="./Assets/final_logo (2).png" />
     <title>Shrawasti Lawns</title>
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="slideshow.css" />
     <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="typingAnimation.css" />
+    <link rel="stylesheet" href="firstSection.css" />
+    <link rel="stylesheet" href="middleSection.css" />
+    <link rel="stylesheet" href="testemonials.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
@@ -49,10 +55,61 @@
       </ul>
     </div>
     <div class="main-description">
-      <h1>
-        Make Your Moments Memorable With <br /><b>Shrawasti Lawns !</b>
-        <!-- <span id="element"></span> -->
-      </h1>
+      <h1>Make Your Moments Memorable With <br /><b>Shrawasti Lawns !</b></h1>
+    </div>
+    <div class="middle-section">
+      <p class="section-container">
+        Nestled in the greenest part of Satara City, Shravasti Lawns is the
+        perfect place to host intimate family events. Whether it's a Baby
+        Shower, Naming Ceremony, Haldi or Mehndi Function, Reception Parties,
+        Birthday Parties, Corporate Events, or Family Get-togethers, Shravasti
+        Lawns is the spot where you can celebrate every occasion stress-free.
+      </p>
+      <video
+        src="./Assets/Videos_Shrawasti_Lawns/ABP_9303.MP4"
+        controls
+        autoplay
+        loop
+        width="90%"
+      ></video>
+    </div>
+    <div class="testemonial">
+      <div class="testimonial-container">
+        <div class="btn" id="btn-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="btn" id="btn-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial">
+          I've worked with literally hundreds of HTML/CSS developers and I have
+          to say the top spot goes to this guy. This guy is an amazing
+          developer. He stresses on good, clean code and pays heed to the
+          details. I love developers who respect each and every aspect of a
+          throughly thought out design and do their best to put it in code. He
+          goes over and beyond and transforms ART into PIXELS - without a
+          glitch, every time.
+        </p>
+        <div class="user">
+          <img
+            src="https://randomuser.me/api/portraits/women/46.jpg"
+            alt="user"
+            class="user-image"
+          />
+          <div class="user-details">
+            <h4 class="username">Miyah Myles</h4>
+            <p class="role">Marketing</p>
+          </div>
+        </div>
+        <div class="progress-dots" id="progress-dots"></div>
+      </div>
     </div>
     <!-- <footer>
       <a href="https://www.instagram.com/shravastilawnsatara/" target="_blank"
@@ -68,21 +125,6 @@
       /></a>
       <p>Copyright &copy; 2024 Shrawasti-Lawns All Rights Reserved.</p>
     </footer> -->
-    <!-- Script fot typed animation -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Functions !!",
-          "Baby Shower !!",
-          "Naming Ceremony !!",
-          "Haldi !!",
-          "Reception Parties !!",
-        ],
-        typeSpeed: 150,
-        backSpeed: 120,
-        loop: true,
-      });
-    </script>
+    <script src="testemonials.js"></script>
   </body>
 </html>

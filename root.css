@@ -38,6 +38,12 @@ h2 {
   letter-spacing: 0.25px;
   word-spacing: 3px;
 }
+p {
+  font-family: var(--h2-font);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--logo-colour);
+}
 
 body {
   /* font-family: var(--body-font); */
@@ -52,4 +58,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--standard-width);
 }
