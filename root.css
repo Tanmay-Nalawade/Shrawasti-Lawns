@@ -2,7 +2,7 @@
   /* --body-font: */
   --text-dark: #000;
   --white: #fefdfc;
-  --logo-colour: #aa865b;
+  --logo-color: #aa865b;
   --light-logo-color: #b99b7d;
 
   --standard-width: 1144px;
@@ -20,7 +20,7 @@
 h1 {
   font-size: 5rem;
   font-weight: normal;
-  color: var(--logo-colour);
+  color: var(--white);
   margin: 0;
   width: 100%;
   letter-spacing: 1px;

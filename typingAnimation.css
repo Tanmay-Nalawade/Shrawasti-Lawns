@@ -1,4 +1,4 @@
-.main-description {
+.header {
   font-size: var(--h2-font);
   padding: 30px 0;
   position: absolute;
@@ -7,9 +7,6 @@
   color: #fefdfc;
   font-weight: normal;
   font-size: large;
-}
-.main-description h1 {
-  color: #fefdfc;
 }
 #element {
   text-decoration: underline;
