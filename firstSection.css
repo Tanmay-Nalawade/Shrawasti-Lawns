@@ -1,6 +1,6 @@
 /* NAVBAR */
 .nav {
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
@@ -13,7 +13,7 @@
   align-items: center;
   width: 100%;
   max-width: var(--standard-width);
-  margin: 40px var(--spacing-xl);
+  margin: 10px var(--spacing-xl);
 }
 .navbar a {
   color: var(--white);
@@ -36,4 +36,58 @@
 
 .navbar a:hover {
   text-decoration: underline;
+}
+
+/* FIRST SECTION */
+.main-description {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 55px 10px;
+}
+.first-block,
+.second-block,
+.third-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.main-description img {
+  height: 50vh;
+  width: 20vw;
+  border-radius: 15px;
+}
+.second-block {
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.second-block h1 {
+  margin: 40px 0;
+}
+.second-block p {
+  text-align: center;
+  margin: 2px 0;
+  color: var(--white);
+  font-size: large;
+}
+
+/* SECOND SECTION */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.middle-section h2 {
+  margin: 150px 0 10px 0;
+}
+.middle-section p {
+  text-align: center;
+}
+.middle-section video {
+  margin: 70px 0;
+  width: var(--standard-width);
 }
