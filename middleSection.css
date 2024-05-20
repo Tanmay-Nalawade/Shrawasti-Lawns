@@ -1,6 +1,24 @@
+.main-description {
+  color: var(--logo-color);
+}
+
 .middle-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--logo-color);
+}
+
+.middle-section video {
+  width: 75vw;
+}
+
+.middle-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.middle-section a:hover {
+  text-decoration: underline;
 }
